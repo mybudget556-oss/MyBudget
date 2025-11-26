@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial;
+  padding: 1rem;
+  margin: 16px 0 20px 0;
+  background-color: #2f4858;
+}
+
+/*Animação na página*/
+@keyframes animacao {
+  0% {
+    opacity: 0;
+    transform: translateY(100);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*formulário de cadastro*/
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  height: 100vh;
+  animation: animacao 1s ease-out forwards;
+  transform: translateY(100px);
+  transition: 1s;
+}
+
+.titulo-cadastro {
+  color: #2f4858;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.subtitulo-cadastro {
+  color: #555;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.form {
+  border: 2px solid green;
+  border-radius: 10px;
+  padding: 20px 30px;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #000;
+}
+
+.form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  color: rgba(0,0,0,0.8);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.botao-cadastro {
+  display: block;
+  padding: 12px 20px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #008000, #006400);
+  color: white;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s color 0.3s;
+}
+
+.botao-cadastro:hover {
+  transform: scale(1.02);
+  background-color: darkgreen;
+  color: #fff;
+  box-shadow: 0 3px 8px rgba(0, 128, 0, 0.3);;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/*Rodapé da página*/
+.rodape {
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  animation: animacao 1s ease-out forwards;
+  transform: translateY(100px);
+  transition: 1s;
+}
+
+/*Responsividade para celulares*/
+@media (min-width: 480px) {
+  .botao-cadastro {
+    font-size: 16px;
+    padding: 12px;
+    max-width: 100%;
+    margin: 10px auto;
+  }
+}
+
+/*Responsividade para desktops e laptops*/
+@media (min-width: 1024px) {
+  .botao-cadastro {
+    font-size: 18px;
+    padding: 14px 24px;
+    max-width: 350px;
+  }
+}

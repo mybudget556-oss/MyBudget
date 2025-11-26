@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  background-color: #2f4858;
+}
+
+@keyframes animacao {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/*Formulário para criar o perfil*/
+.formulario-perfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-perfil {
+  color: #2f4858;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.subtitulo-perfil {
+  color: #555;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.criacao-perfil {
+  border: 2px solid green;
+  border-radius: 10px;
+  padding: 20px 30px;
+  max-width: 400px;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  animation: animacao 0.6s ease-out forwards;
+}
+
+.criacao-perfil label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #000;
+}
+
+.criacao-perfil input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  color: rgba(0,0,0,0.8);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.biografia {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: rgba(0,0,0,0.8);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-perfil {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  background: linear-gradient(135deg, #008000, #006400);
+  color: white;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s color 0.3s;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/*Responsividade para celulares pequenos*/
+@media (max-width: 500px) {
+  .criacao-perfil {
+    padding: 15px 20px;
+    width: 90%;
+  }
+}

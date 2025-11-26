@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor-erro: #a83232;
+}
+
+body {
+  font-family: Arial;
+  padding: 0;
+  margin: 0;
+  background-color: #2f4858;
+}
+
+/*Animação na página*/
+@keyframes animacao {
+  0% {
+    opacity: 0;
+    transform: translateY(100);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*cabeçalho da página com a logo do mybudget*/
+.cabecalho {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.imagem-logo {
+  width: 240px;
+  animation: animacao 1s ease-out forwards;
+  transform: translateY(100px);
+  transition: 1s;
+}
+
+/*Formulário de login*/
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  animation: animacao 1s ease-out forwards;
+  transform: translateY(100px);
+  transition: 1s;
+}
+
+.titulo-login {
+  color: #2f4858;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.subtitulo-login {
+  color: #555;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.form {
+  border: 2px solid green;
+  border-radius: 10px;
+  padding: 20px 30px;
+  max-width: 400px;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #000;
+}
+
+.form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  color: rgba(0,0,0,0.8);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.erro {
+  color: var(--cor-erro);
+  font-size: 0.9rem;
+  display: block;
+  margin-top: 4px;
+}
+
+/*Botão*/
+.botao-login {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  background: linear-gradient(135deg, #008000, #006400);
+  color: white;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s color 0.3s;
+}
+
+.botao-login:hover {
+  transform: scale(1.02);
+  background: darkgreen;
+  color: #fff;
+  box-shadow: 0 3px 8px rgba(0, 128, 0, 0.3);
+}
+
+/*Seção de informações*/
+.informacoes {
+  font-size: 15px;
+  margin: 40px auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  animation: animacao 1s ease-out forwards;
+  transform: translateY(100px);
+  transition: 1s;
+}
+
+/*Links*/
+.link {
+  text-decoration: none;
+  color: green;
+  font-weight: bold;
+  transition: color 0.3s;
+  transform: translateY(100px);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  animation: animacao 1s ease-out forwards;
+  transform: translateX(100px);
+  transition: 1s;
+}
+
+.link:hover {
+  transform: scale(1.02);
+  background: darkgreen;
+  color: #fff;
+}
+
+.rodape {
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  animation: animacao 1s ease-out forwards;
+  transform: translateY(100px);
+  transition: 1s;
+}
+
+/*responsividade para mobile*/
+@media (min-width: 768px) {
+  .imagem-logo {
+    width: 240px;
+  }
+  
+  .form {
+    width: 90%;
+  }
+  
+  .boas-vindas, .informacoes {
+    font-size: 16px;
+    margin: 20px 0;
+  }
+}

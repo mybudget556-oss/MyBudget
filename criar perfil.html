@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>crie seu perfil</title>
+  <link rel="stylesheet" href="./assets/css/criar perfil.css">
+</head>
+<body>
+  
+  <main>
+    <div class="formulario-perfil">
+      <form class="criacao-perfil">
+        <h1 class="titulo-perfil">Crie seu perfil</h1>
+        <h2 class="subtitulo-perfil">Crie seu perfil e se prepare para organizar sua vida financeira</h2>
+        
+        <label for="foto">FOTO DE PERFIL</label>
+        <input type="file" id="foto" name="foto" accept="image/*">
+        
+        <label for="name">NOME</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="idade">IDADE</label>
+        <input type="number" id="number" name="number" required>
+        
+        <label for="genero">GENERO</label>
+        <select id="genero" name="genero" required>
+          <option value="">Selecione o seu genero:</option>
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+          <option value="prefiro não dizer">Prefiro não dizer</option>
+        </select>
+      
+        <label for="bio">Sobre voce</label>
+        <textarea class="biografia" id="bio" name="bio" rows="4" placeholder="Fale um pouco sobre voce..."></textarea>
+        
+        <a class="link" href="index.html">
+        <button class="btn-perfil" type="submit">criar perfil</button>
+        </a>
+      </form>
+    </div>
+  </main>
+
+</body>
+</html>

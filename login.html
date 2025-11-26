@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Budget</title>
+    <link rel="stylesheet" href="./assets/css/login.css">
+</head>
+<body>
+  <!---cabeçalho com a imagem da logo--->
+    <header class="cabecalho">
+      <img class="imagem-logo" src="./assets/img/logo mybudget.png" alt="logo oficial do My Budget">
+    </header>
+  
+  <main>
+  <!---Formulário para fazer login--->
+  <section class="formulario">
+  <div class="formulario">
+    <div class="form">
+    <h1 class="titulo-login">Bem-vindo de volta!</h1>
+    <h3 class="subtitulo-login">Acesse sua conta para continuar controlando suas financas</h3>
+    <form action="login.php" method="post">
+        <label for="email">E-MAIL</label>
+        <input type="email" id="email" name="email" placeholder="email" autocomplete="current_email" required>
+          <span class="erro" id="erro-email"></span>
+          
+          <label for="senha">SENHA</label>
+          <input type="password" id="senha" name="senha" placeholder="••••••••" autocomplete="current_password" required>
+          <span class="erro" id="erro-senha"></span>
+          
+          <button class="botao-login" type="submit">Fazer login</button>
+          </form>
+        </div>
+      </div>
+    </section>
+        
+      <!---Links e informações adicionais--->
+      <section class="informacoes">
+      <div class="informacoes">
+        <h2>Ainda não tem conta?</h2>
+            <p><b>Crie sua conta</b> gratuitamente e comece a controlar seus gastos, planejar seu futuro e alcançar seus objetivos financeiros.</p>
+            <br>
+            <a class="link" href="cadastro.html">criar conta</a>
+            <br><br>
+          <h2>Esqueceu a senha ?</h2>
+            <p>Não se preocupe! Clique no link abaixo para redefinir sua senha e voltar a acessar sua conta.</p>
+            <br><br>
+            <a class="link" href="recuperacao.html">Redefinir senha</a>
+            <br><br>
+            <h2>Dica de segurança</h2>
+            <br>
+            <p>Nunca compartilhe sua senha com ninguém e utilize senhas fortes para proteger suas informações financeiras.</p>
+      </div>
+      </section>
+    </main>
+    
+    <footer class="rodape">
+      <p>&copy; My Budget - Organize suas financas, planeje e conquiste sua liberdade financeira.</p>
+    </footer>
+  
+  <script src="./assets/js/login.js"></script>
+  </body>
+</html>

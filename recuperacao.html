@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Recuperação</title>
+  <link rel="stylesheet" href="./assets/css/recuperacao.css">
+</head>
+<body>
+  <main>
+  <!---Formulário de recuperação de conta--->
+  <section class="formulario">
+  <div class="formulario">
+    <div class="form">
+      <h1 class="titulo-seguranca">Recupere sua conta!</h1>
+      <h3 class="subtitulo-seguranca">Perdeu o acesso a sua conta ou não lembra qual é o seu e-mail ou senha? solicite uma nova senha registrando o formulário abaixo.</h3>
+      <form action="login" method="post">
+        <label for="email">E-MAIL</label>
+        <input type="email" id="email" name="email" placeholder="email" required>
+        
+        <label for="senha">SENHA</label>
+        <input type="password" id="senha" name="senha" placeholder="senha" required>
+        
+        <label for="nova senha">NOVA SENHA</label>
+        <input type="password" id="nova-senha" name="nova-senha" placeholder="nova senha" required>
+        
+        <label for="confirmar senha">CONFIRMAR SENHA</label>
+        <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="confirmar senha" required>
+        
+        <button class="btn-green" type="submit">confirmar</button>
+      </form>
+      
+      <p class="dica-seguranca"><strong>Dica de segurança:</strong> Crie uma senha forte e que seja fácil de lembrar para garantir sua segurança e evite<br>
+       enviar dados pessoais para pessoas desconhecidas</p>
+    </div>
+  </div>
+</section>
+</main>
+</body>
+</html>
